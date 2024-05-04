@@ -9,7 +9,7 @@ Download YouTube videos at 720p resolution, it is somewhat limited, but we conti
 
 For support:
 
-- a2201636@uabc.edu.mx
+- [Linktr](https://linktr.ee/AlanTorresCardona)
 
 
 ## Authors
