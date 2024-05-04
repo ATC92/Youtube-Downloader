@@ -88,6 +88,6 @@ def VideoResolution(VideoOptions):
         VideoSelected = VideoOptions[option-1]
         # Descarga el video en la calidad deseada.
         VideoSelected.download(output_path=desktopDirectory) 
-        print("Descarga completa.") 
+        print("Descarga completa.\n\n") 
     else:
         print("Selección de calidad inválida")  # Indica que la opción seleccionada no es válida
