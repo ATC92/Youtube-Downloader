@@ -9,7 +9,7 @@ Download YouTube videos at 720p resolution, it is somewhat limited, but we conti
 
 For support:
 
-- [Alan Torres](https://linktr.ee/AlanTorresCardona)
+- [Lnkttr](https://linktr.ee/AlanTorresCardona)
 
 
 ## Authors
