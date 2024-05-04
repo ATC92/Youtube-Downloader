@@ -1,0 +1,17 @@
+RepetirPrograma = Would you like to enter another link
+RepetirPrograma2 = [1] - Yes / [0] - NO:  
+Error = Error, try again.
+OcurrioError = An error occurred:
+LinkVideo = Enter the video link:
+ErrorVideoLoad = Video {Link}, not valid, try again.
+OptionAudioVideo = In what format do you want to download it:
+OptionSelection = [1] - Video
+OptionSelection2 = [2] - Audio
+TryAgain = Invalid option, try again...
+Tittle = Tittle: 
+Autor = Autor: 
+Duration = Duration:
+Quality = Quality options available:
+OptionNumber = Enter the desired option (Remember to use number):
+Download = Download complete.
+SelectionInvalid = Invalid quality selection

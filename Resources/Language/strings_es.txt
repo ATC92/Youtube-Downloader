@@ -1,0 +1,17 @@
+RepetirPrograma = Desea ingresar otro link
+RepetirPrograma2 = [1] - SI / [0] - NO:  
+Error = Error, intenta de nuevo.
+OcurrioError = Ocurrio un error:
+LinkVideo = Ingrese el enlace del video: 
+ErrorVideoLoad = Video {Link}, no es válido, intenta de nuevo.
+OptionAudioVideo = En que formato lo deseas descargar: 
+OptionSelection = [1] - Video
+OptionSelection2 = [2] - Audio
+TryAgain = Opcion Invalida, intenta de nuevo...
+Tittle = Título: 
+Autor = Autor: 
+Duration = Duración: 
+Quality = Opciones de calidad disponibles: 
+OptionNumber = Ingrese la opción deseada (Recuerda usar número): 
+Download = Descarga completa.
+SelectionInvalid = Selección de calidad inválida
