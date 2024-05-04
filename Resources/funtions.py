@@ -1,6 +1,5 @@
 from pytube import YouTube
 from pytube.exceptions import VideoUnavailable
-from tqdm import tqdm
 import os
 import time
 
@@ -94,36 +93,24 @@ def VideoResolution(VideoOptions,string):
         print(string["Download"],"\n\n") 
     else:
         print(string["SelectionInvalid"])  # Indica que la opción seleccionada no es válida
-        
+
 def cargar_strings(idioma):
     # Diccionario para almacenar las cadenas de texto
     strings = {}
-
+    # Obtener la ruta del directorio del script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
     # Determinar la ruta del archivo según el idioma seleccionado
-    ruta_archivo = f"Resources/Language/strings_{idioma}.txt"
-
+    ruta_archivo = os.path.join(script_dir, f"Language/strings_{idioma}.txt")
     # Leer las cadenas de texto desde el archivo
-    with open(ruta_archivo, "r", encoding="utf-8") as file:
-        for linea in file:
-            # Separar la línea en clave y valor
-            clave, valor = linea.strip().split(" = ")
-            # Agregar la clave y valor al diccionario
-            strings[clave] = valor
-
+    try:
+        with open(ruta_archivo, "r", encoding="utf-8") as file:
+            for linea in file:
+                # Separar la línea en clave y valor
+                clave, valor = linea.strip().split(" = ")
+                # Agregar la clave y valor al diccionario
+                strings[clave] = valor
+    except FileNotFoundError:
+        print(f"Error: No se pudo encontrar el archivo de idioma {idioma}")
+        # Retornar un diccionario vacío en caso de error
+        return strings
     return strings
-
-def SelectionLenguaje():
-    while True:
-        try:
-            print("[1] - Español\n[2] - English")
-            option = int(input(">>>> "))
-        except ValueError:
-            print("Error")
-        if(option > 0 and option < 3):
-            if(option == 1):
-                option = "es"
-            elif (option == 2):
-                option = "en"
-            break
-        
-    return option
